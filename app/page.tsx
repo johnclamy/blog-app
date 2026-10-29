@@ -9,6 +9,14 @@ export default function Home() {
                         </a>{' '}
                         and high-signal architectures.
                     </p>
+                    <p>
+                        Lean treats code as a{' '}
+                        <a href='https://abstractmath.org/MM/MMMathObj.htm'>
+                            mathematical object
+                        </a>. 
+                        It allows you to write a program and then mathematically 
+                        prove that the program is 100% free of bugs and side effects.
+                    </p>
             </section>
         </main>
     )
