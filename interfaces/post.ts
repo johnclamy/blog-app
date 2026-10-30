@@ -1,5 +1,5 @@
 // Define the shape for a blog post
-interface BlogPost {
+export default interface BlogPost {
     id: number
     title: string
     author: string
@@ -8,4 +8,8 @@ interface BlogPost {
 }
 
 
-export default BlogPost
+// Define a shape for setting unique post IDs
+export interface ResolvePostId {
+    nextId: number
+    getNextId: () => number
+}
