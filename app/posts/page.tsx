@@ -1,11 +1,13 @@
-import posts from "@/services/data"
+import getPosts from "@/services/posts"
 
 
 export default function PostsPage() {
+    const posts = getPosts()
+
     return (
         <main>
             <header>
-                <h1>Blog Posts</h1>
+                <h1>posts</h1>
             </header>
             
             <article>
