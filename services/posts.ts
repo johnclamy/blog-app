@@ -1,12 +1,13 @@
 import posts, { postId } from './data'
+import BlogPost from '@/interfaces/post'
 
 
-export default function getPosts(): typeof posts {
+export default function getPosts(): BlogPost[] {
     return posts
 }
 
 
-export function addPost(post: Omit<typeof posts[number], 'id'>) {
+export function addPost(post: Omit<BlogPost, 'id'>): BlogPost {
     const newPost = { ...post, id: postId.getNextId() }
     
     posts.push(newPost)
